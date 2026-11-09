@@ -15,4 +15,4 @@ Preview locally with `python3 -m http.server 8765` and open http://127.0.0.1:876
 
 GitHub Pages publishes the root of the `main` branch. No build step is required.
 
-Layout inspired by https://rosy0912.github.io/. Paper figures are credited through links to their original papers. The SkillLens thumbnail is an explicitly labeled method summary.
+Layout inspired by https://rosy0912.github.io/. Paper figures are credited through links to their original papers. SkillLens and HEART-Bench thumbnails use the original paper overview figures. The profile avatar was supplied by Chenxu Zhang.
