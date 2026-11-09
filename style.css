@@ -20,14 +20,25 @@ strong{font-weight:650}
 .chinese-name{margin:0 0 20px;color:#70777e;font-size:17px;letter-spacing:2px}
 .profile-focus{font-size:14px;line-height:1.7;margin:0 0 17px}
 .affiliation{font-size:13px;color:#797f85;line-height:1.7;margin:0 0 21px}
-.contact-list{list-style:none;padding:0;margin:0}
-.contact-list li{display:flex;align-items:center;gap:10px;line-height:2.25}
+.contact-list{list-style:none;padding:0;margin:0;display:grid;gap:7px}
+.contact-list li{display:flex;align-items:center;line-height:1.6}
 .contact-list a{color:#454d54;font-size:13.5px}
-.contact-link{display:inline-flex;align-items:center;gap:10px}
-.brand-icon{display:block;width:20px;height:20px;object-fit:contain;flex:none}
-.affiliation-row{display:flex;align-items:center;gap:9px;line-height:1.65;margin-bottom:8px}
+.contact-link{display:flex;align-items:center;gap:10px;width:100%;padding:6px 9px;border:1px solid var(--contact-border);border-radius:9px;background:var(--contact-bg);transition:filter .15s ease}
+.contact-link:hover{text-decoration:none;filter:brightness(.97)}
+.contact-email{--contact-bg:#f0f5fb;--contact-border:#dfe9f6;--tile-bg:#dfeaf8}
+.contact-github{--contact-bg:#f4f5f7;--contact-border:#e5e7eb;--tile-bg:#e5e8ee}
+.contact-scholar{--contact-bg:#eff5ff;--contact-border:#dce8fc;--tile-bg:#deeaff}
+.contact-rednote{--contact-bg:#fff1f3;--contact-border:#ffdde3;--tile-bg:#ff2442}
+.icon-tile{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;flex:none;border-radius:7px;background:var(--tile-bg);overflow:hidden}
+.brand-icon{display:block;width:22px;height:22px;object-fit:contain;flex:none}
+.contact-email .brand-icon{width:21px;height:21px}
+.contact-rednote .brand-icon{width:28px;height:28px;border-radius:7px}
+.affiliation-row{display:flex;align-items:center;gap:10px;line-height:1.65;margin-bottom:9px}
 .affiliation-row:last-child{margin-bottom:0}
+.affiliation-imperial{--tile-bg:#efefff}
+.affiliation-longcat{--tile-bg:#eaf9ed}
 .affiliation-logo{width:22px;height:22px}
+.affiliation-longcat .brand-icon{width:28px;height:28px}
 
 .email-address{font-size:12px;display:block;margin-top:15px;color:#7b838a}
 main{min-width:0}
@@ -100,7 +111,7 @@ footer a{color:#7f8f9c;white-space:nowrap}
   .profile h1{font-size:25px;margin-top:5px}.chinese-name{font-size:15px;margin:4px 0 8px}
   .profile-focus{font-size:13px;margin-bottom:9px}.profile-focus br{display:none}.profile-focus span:not(:last-of-type)::after{content:" · ";color:#9aa4ad}
   .affiliation{grid-column:1/-1;font-size:13px;margin:16px 0 8px}
-  .contact-list{grid-column:1/-1;display:flex;gap:20px;flex-wrap:wrap}.contact-list li{gap:7px;line-height:1.8}.contact-list a{font-size:13px}
+  .contact-list{grid-column:1/-1;display:flex;gap:9px;flex-wrap:wrap}.contact-list li{gap:7px;line-height:1.8}.contact-list a{font-size:13px}
   .email-address{display:none}.section-link{font-size:12px}
 }
 @media(max-width:680px){
@@ -113,7 +124,7 @@ footer a{color:#7f8f9c;white-space:nowrap}
   html{scroll-padding-top:104px}.nav{display:block;padding:12px 20px 9px}.home{font-size:18px}
   .nav-links{margin-top:8px;gap:22px;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}
   .layout{padding:28px 21px 18px}.profile{grid-template-columns:100px minmax(0,1fr);column-gap:21px}
-  .avatar{width:100px;height:100px}.profile h1{font-size:23px}.profile-focus{font-size:12px}.contact-list{gap:16px}.contact-list a{font-size:12px}
+  .avatar{width:100px;height:100px}.profile h1{font-size:23px}.profile-focus{font-size:12px}.contact-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.contact-list a{font-size:12px}
   body{font-size:15px}h2{font-size:23px}h2>span{font-size:21px}.section-link{display:none}.section-heading h2{padding-right:0}
   .section-note{font-size:13px}.badge{font-size:12px}.paper-title{font-size:19px}.paper-links a,.bib-button{font-size:13px}
   .entry h3{font-size:16px}.entry p{font-size:14px}.entry-details{font-size:14px}section{margin-bottom:36px}
