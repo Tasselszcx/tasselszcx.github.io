@@ -23,9 +23,12 @@ strong{font-weight:650}
 .contact-list{list-style:none;padding:0;margin:0}
 .contact-list li{display:flex;align-items:center;gap:10px;line-height:2.25}
 .contact-list a{color:#454d54;font-size:13.5px}
-.icon{width:16px;height:16px;display:inline-flex;justify-content:center;align-items:center;font-size:17px;color:#666f76;flex:none}
-.scholar{font-family:Georgia,serif;font-weight:bold}
-.rednote{font-size:12px;font-weight:700}
+.contact-link{display:inline-flex;align-items:center;gap:10px}
+.brand-icon{display:block;width:20px;height:20px;object-fit:contain;flex:none}
+.affiliation-row{display:flex;align-items:center;gap:9px;line-height:1.65;margin-bottom:8px}
+.affiliation-row:last-child{margin-bottom:0}
+.affiliation-logo{width:22px;height:22px}
+
 .email-address{font-size:12px;display:block;margin-top:15px;color:#7b838a}
 main{min-width:0}
 section{margin-bottom:48px;scroll-margin-top:16px}
