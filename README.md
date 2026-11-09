@@ -7,8 +7,8 @@ A responsive static site with biography, selected publications, education, resea
 ## Editing
 
 - `index.html`: profile, biography, education, and experience.
-- `site.js`: publication entries, author order, links, and citations.
-- `style.css`: layout and responsive styles.
+- `site.js`: publication entries, author order, links, citations, and a keyboard-accessible overview viewer.
+- `style.css`: layout and responsive styles. Publication figures occupy about 44% of each desktop row; mobile figures span the content width.
 - `assets/`: profile image and paper figures.
 
 Preview locally with `python3 -m http.server 8765` and open http://127.0.0.1:8765.
